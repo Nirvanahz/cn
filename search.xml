@@ -50,11 +50,20 @@
   <entry>
     <title>一亩三分地每日答题题库与答案</title>
     <url>/cn/1point3acres-tiku.html</url>
-    <content><![CDATA[<html><head></head><body><h4 id="以下哪一位名人不是英国人？"><a href="#以下哪一位名人不是英国人？" class="headerlink" title="以下哪一位名人不是英国人？"></a>以下哪一位名人不是英国人？</h4><ul>
+    <content><![CDATA[<html><head></head><body><p>没有 state income tax 的州</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">Alaska, Florida, Nevada, South Dakota, Texas, Washington, Wyoming</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="以下哪一位名人不是英国人？"><a href="#以下哪一位名人不是英国人？" class="headerlink" title="以下哪一位名人不是英国人？"></a>以下哪一位名人不是英国人？</h4><ul>
 <li><input disabled type="checkbox"> William Shakespeare (发明了很多难背的单词…)</li>
 <li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">Louis Pasteur(他发现了巴斯德高温消毒法</span></li>
 <li><input disabled type="checkbox"> Edward Jenner（发明疫苗的）</li>
 <li><input disabled type="checkbox"> Alexander Fleming (盘尼西林发现者) <a id="more"></a></li>
+</ul>
+<h4 id="以下哪个不是Linux操作系统？"><a href="#以下哪个不是Linux操作系统？" class="headerlink" title="以下哪个不是Linux操作系统？"></a>以下哪个不是Linux操作系统？</h4><ul>
+<li><input disabled type="checkbox"> CentOS</li>
+<li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">Vue</span></li>
+<li><input disabled type="checkbox"> Mint</li>
+<li><input disabled type="checkbox"> Deepin</li>
 </ul>
 <h4 id="以下哪种不是Modes-of-dataflow"><a href="#以下哪种不是Modes-of-dataflow" class="headerlink" title="以下哪种不是Modes of dataflow?"></a>以下哪种不是Modes of dataflow?</h4><ul>
 <li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">tcp/ip</span></li>
