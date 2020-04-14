@@ -59,6 +59,12 @@
 <li><input disabled type="checkbox"> Edward Jenner（发明疫苗的）</li>
 <li><input disabled type="checkbox"> Alexander Fleming (盘尼西林发现者) <a id="more"></a></li>
 </ul>
+<h4 id="下面哪个州，有state-income-tax-on-wages"><a href="#下面哪个州，有state-income-tax-on-wages" class="headerlink" title="下面哪个州，有state income tax on wages"></a>下面哪个州，有state income tax on wages</h4><ul>
+<li><input disabled type="checkbox"> South Dakota</li>
+<li><input disabled type="checkbox"> Tennessee</li>
+<li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">North Dakota</span></li>
+<li><input disabled type="checkbox"> Wyoming </li>
+</ul>
 <h4 id="以下哪个不是Linux操作系统？"><a href="#以下哪个不是Linux操作系统？" class="headerlink" title="以下哪个不是Linux操作系统？"></a>以下哪个不是Linux操作系统？</h4><ul>
 <li><input disabled type="checkbox"> CentOS</li>
 <li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">Vue</span></li>
@@ -179,7 +185,7 @@
 <li><input disabled type="checkbox"> 莱斯大学</li>
 <li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">凯斯西储大学</span></li>
 </ul>
-<h4 id="下面哪个州，有state-income-tax-on-wages"><a href="#下面哪个州，有state-income-tax-on-wages" class="headerlink" title="下面哪个州，有state income tax on wages"></a>下面哪个州，有state income tax on wages</h4><ul>
+<h4 id="下面哪个州，有state-income-tax-on-wages-1"><a href="#下面哪个州，有state-income-tax-on-wages-1" class="headerlink" title="下面哪个州，有state income tax on wages"></a>下面哪个州，有state income tax on wages</h4><ul>
 <li><input disabled type="checkbox"> Tennessee</li>
 <li><input checked disabled type="checkbox"> <span style="background-color: #8cd6b4;">Mississippi</span></li>
 <li><input disabled type="checkbox"> Washington</li>
