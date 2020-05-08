@@ -3,73 +3,48 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="linear-gradient(to right, #ff5483, #ffae0c)">
+<meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/cn/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/cn/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/cn/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/cn/images/logo.svg" color="linear-gradient(to right, #ff5483, #ffae0c)">
+  <link rel="apple-touch-icon" sizes="180x180" href="/cn/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/cn/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/cn/images/favicon.png">
+  <link rel="mask-icon" href="/cn/images/favicon.png" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/cn/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Alegreya:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://todatasci.com/cn').hostname,
-    root: '/cn/',
-    scheme: 'Gemini',
-    version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"mac"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: true,
-    pangu: false,
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},
-    path: 'search.xml',
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    sidebarPadding: 40
-  };
-</script>
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"emath.page","root":"/cn/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-  <meta name="description" content="线性代数应该这样学第三版习题解答目录             第7题: 该命题正确. 因为如果存在 , ,   使得 我们有  因为 , , ,  是线性无关的, 所以从而得到 , 因此由定义 2.17 知向量组是线性无关的.">
+  <meta name="description" content="线性代数应该这样学第三版习题解答目录             第7题: 该命题正确. 因为如果存在 $a_1$, $\cdots$, $a_m$ $\in\mathbb F$ 使得 \[a_1(5v_1-4v_2)+a_2v_2+\cdots+a_mv_m&#x3D;0,\]我们有 \[5a_1v_1+(a_2-4a_1)v_2+a_3v_3\cdots+a_mv_m&#x3D;0.\] 因">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线性代数应该这样学第三版习题解答2.A.7">
-<meta property="og:url" content="https://todatasci.com/cn/LADR-2A7.html">
+<meta property="og:url" content="https://emath.page/cn/LADR-2A7.html">
 <meta property="og:site_name" content="悠若空">
-<meta property="og:description" content="线性代数应该这样学第三版习题解答目录             第7题: 该命题正确. 因为如果存在 , ,   使得 我们有  因为 , , ,  是线性无关的, 所以从而得到 , 因此由定义 2.17 知向量组是线性无关的.">
+<meta property="og:description" content="线性代数应该这样学第三版习题解答目录             第7题: 该命题正确. 因为如果存在 $a_1$, $\cdots$, $a_m$ $\in\mathbb F$ 使得 \[a_1(5v_1-4v_2)+a_2v_2+\cdots+a_mv_m&#x3D;0,\]我们有 \[5a_1v_1+(a_2-4a_1)v_2+a_3v_3\cdots+a_mv_m&#x3D;0.\] 因">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-20T04:12:08.333Z">
 <meta property="article:modified_time" content="2020-03-20T04:12:09.784Z">
-<meta property="article:author" content="Anavrin">
+<meta property="article:author" content="Math-Page">
 <meta property="article:tag" content="Solution">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://todatasci.com/cn/LADR-2A7.html">
+<link rel="canonical" href="https://emath.page/cn/LADR-2A7.html">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
   };
 </script>
 
@@ -113,124 +88,7 @@
   </style>
 </noscript>
 
-<style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"] > svg a {
-  fill: blue;
-  stroke: blue;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container {
-  overflow: auto hidden;
-}
-
-mjx-container + br {
-  display: none;
-}
-</style></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
@@ -238,17 +96,6 @@ mjx-container + br {
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/cn/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">悠若空</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-  </div>
-
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
@@ -256,30 +103,46 @@ mjx-container + br {
       <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
+
+  <div class="site-meta">
+
+    <a href="/cn/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">悠若空</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
 </div>
 
 
+
+
 <nav class="site-nav">
-  
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/cn/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/cn/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/cn/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">3</span></a>
+    <a href="/cn/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/cn/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">2</span></a>
+    <a href="/cn/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/cn/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">66</span></a>
+    <a href="/cn/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>归档<span class="badge">66</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -287,29 +150,34 @@ mjx-container + br {
         </a>
       </li>
   </ul>
-
 </nav>
-  <div class="site-search">
+
+
+
+  <div class="search-pop-overlay">
     <div class="popup search-popup">
-    <div class="search-header">
+        <div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+    <input autocomplete="off" autocapitalize="off"
            placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result"></div>
-
-</div>
-<div class="search-pop-overlay"></div>
-
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
   </div>
+</div>
+
+    </div>
+  </div>
+
 </div>
     </header>
 
@@ -326,19 +194,18 @@ mjx-container + br {
         <div class="content-wrap">
           
 
-          <div class="content">
+          <div class="content post posts-expand">
             
 
-  <div class="posts-expand">
-      
+    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://todatasci.com/cn/cn/LADR-2A7.html">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://emath.page/cn/LADR-2A7.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/cn/images/avatar.gif">
-      <meta itemprop="name" content="Anavrin">
+      <meta itemprop="image" content="/cn/images/avatar.png">
+      <meta itemprop="name" content="Math-Page">
       <meta itemprop="description" content="">
     </span>
 
@@ -346,14 +213,14 @@ mjx-container + br {
       <meta itemprop="name" content="悠若空">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           线性代数应该这样学第三版习题解答2.A.7
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
               
@@ -362,33 +229,31 @@ mjx-container + br {
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/cn/categories/Linear-Algebra-Done-Right/" itemprop="url" rel="index">
-                    <span itemprop="name">Linear Algebra Done Right</span>
-                  </a>
+                  <a href="/cn/categories/Linear-Algebra-Done-Right/" itemprop="url" rel="index"><span itemprop="name">Linear Algebra Done Right</span></a>
                 </span>
             </span>
 
           
-            <span class="post-meta-item" title="阅读次数">
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">阅读次数：</span>
-              <span class="firestore-visitors-count"></span>
+              <span id="busuanzi_value_page_pv"></span>
             </span>
   
   <span class="post-meta-item">
     
       <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
+        <i class="far fa-comment"></i>
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/cn/LADR-2A7.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/cn/LADR-2A7.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/cn/LADR-2A7.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -396,14 +261,14 @@ mjx-container + br {
   <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
+                <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>80</span>
+              <span>317</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
+                <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
@@ -418,19 +283,19 @@ mjx-container + br {
     <div class="post-body" itemprop="articleBody">
 
       
-        <html><head></head><body><div class="note primary">
+        <div class="note primary">
             <p><a href="/cn/LADR-content.html">线性代数应该这样学第三版习题解答目录</a></p>
           </div>
 
-<p>第7题: 该命题正确. 因为如果存在 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex" xmlns="http://www.w3.org/2000/svg" width="2.11ex" height="1.337ex" role="img" focusable="false" viewBox="0 -441 932.6 591" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.43ex" xmlns="http://www.w3.org/2000/svg" width="2.652ex" height="0.271ex" role="img" focusable="false" viewBox="0 -310 1172 120" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use href="#MJX-TEX-N-22EF"/></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex" xmlns="http://www.w3.org/2000/svg" width="2.715ex" height="1.355ex" role="img" focusable="false" viewBox="0 -441 1199.8 598.8" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g></g></g></svg></mjx-container> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex" xmlns="http://www.w3.org/2000/svg" width="3.52ex" height="1.636ex" role="img" focusable="false" viewBox="0 -683 1555.8 723" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use href="#MJX-TEX-N-2208"/></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(944.8, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-D-46"/></g></g></g></g></svg></mjx-container> 使得 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="38.095ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 16837.8 1000" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(932.6, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mn" transform="translate(1321.6, 0)"><use href="#MJX-TEX-N-35"/></g><g data-mml-node="msub" transform="translate(1821.6, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(2932.3, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(3932.6, 0)"><use href="#MJX-TEX-N-34"/></g><g data-mml-node="msub" transform="translate(4432.6, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(5321.1, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(5932.3, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="msub" transform="translate(6932.5, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="msub" transform="translate(7865.1, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(8975.9, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(9976.1, 0)"><use href="#MJX-TEX-N-22EF"/></g><g data-mml-node="mo" transform="translate(11370.3, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="msub" transform="translate(12370.5, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g><g data-mml-node="msub" transform="translate(13570.4, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mi" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g><g data-mml-node="mo" transform="translate(15004, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(16059.8, 0)"><use href="#MJX-TEX-N-30"/></g><g data-mml-node="mo" transform="translate(16559.8, 0)"><use href="#MJX-TEX-N-2C"/></g></g></g></svg></mjx-container>我们有 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="42.691ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 18869.6 1000" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use href="#MJX-TEX-N-35"/></g><g data-mml-node="msub" transform="translate(500, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="msub" transform="translate(1432.6, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(2543.3, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(3543.6, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="msub" transform="translate(3932.6, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(5087.3, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(6087.5, 0)"><use href="#MJX-TEX-N-34"/></g><g data-mml-node="msub" transform="translate(6587.5, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(7520.1, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="msub" transform="translate(7909.1, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(9019.9, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="msub" transform="translate(10020.1, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-33"/></g></g><g data-mml-node="msub" transform="translate(10952.7, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-33"/></g></g><g data-mml-node="mo" transform="translate(12007.9, 0)"><use href="#MJX-TEX-N-22EF"/></g><g data-mml-node="mo" transform="translate(13402.1, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="msub" transform="translate(14402.3, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g><g data-mml-node="msub" transform="translate(15602.2, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mi" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g><g data-mml-node="mo" transform="translate(17035.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(18091.6, 0)"><use href="#MJX-TEX-N-30"/><use href="#MJX-TEX-N-2E" transform="translate(500, 0)"/></g></g></g></svg></mjx-container> 因为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex" xmlns="http://www.w3.org/2000/svg" width="2.01ex" height="1.342ex" role="img" focusable="false" viewBox="0 -443 888.6 593" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex" xmlns="http://www.w3.org/2000/svg" width="2.01ex" height="1.342ex" role="img" focusable="false" viewBox="0 -443 888.6 593" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.43ex" xmlns="http://www.w3.org/2000/svg" width="2.652ex" height="0.271ex" role="img" focusable="false" viewBox="0 -310 1172 120" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use href="#MJX-TEX-N-22EF"/></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex" xmlns="http://www.w3.org/2000/svg" width="2.615ex" height="1.359ex" role="img" focusable="false" viewBox="0 -443 1155.8 600.8" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mi" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g></g></g></svg></mjx-container> 是线性无关的, 所以<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.439ex" xmlns="http://www.w3.org/2000/svg" width="39.954ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 17659.6 871" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use href="#MJX-TEX-N-35"/></g><g data-mml-node="msub" transform="translate(500, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(1710.3, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(2766.1, 0)"><use href="#MJX-TEX-N-30"/></g><g data-mml-node="mo" transform="translate(3266.1, 0)"><use href="#MJX-TEX-N-2C"/></g><g data-mml-node="msub" transform="translate(3710.8, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(4865.6, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(5865.8, 0)"><use href="#MJX-TEX-N-34"/></g><g data-mml-node="msub" transform="translate(6365.8, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(7576.1, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(8631.9, 0)"><use href="#MJX-TEX-N-30"/></g><g data-mml-node="mo" transform="translate(9131.9, 0)"><use href="#MJX-TEX-N-2C"/></g><g data-mml-node="msub" transform="translate(9576.5, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-33"/></g></g><g data-mml-node="mo" transform="translate(10786.9, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mo" transform="translate(11842.7, 0)"><use href="#MJX-TEX-N-22EF"/></g><g data-mml-node="mo" transform="translate(13292.4, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="msub" transform="translate(14348.2, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g><g data-mml-node="mo" transform="translate(15825.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(16881.6, 0)"><use href="#MJX-TEX-N-30"/><use href="#MJX-TEX-N-2E" transform="translate(500, 0)"/></g></g></g></svg></mjx-container>从而得到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex" xmlns="http://www.w3.org/2000/svg" width="22.785ex" height="1.864ex" role="img" focusable="false" viewBox="0 -666 10071.2 823.8" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(1210.3, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="msub" transform="translate(2266.1, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mn" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(3476.4, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mo" transform="translate(4532.2, 0)"><use href="#MJX-TEX-N-22EF"/></g><g data-mml-node="mo" transform="translate(5982, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="msub" transform="translate(7037.8, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-61"/></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g><g data-mml-node="mo" transform="translate(8515.4, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(9571.2, 0)"><use href="#MJX-TEX-N-30"/></g></g></g></svg></mjx-container>, 因此由定义 2.17 知向量组<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.439ex" xmlns="http://www.w3.org/2000/svg" width="22.737ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 10049.8 871" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use href="#MJX-TEX-N-35"/></g><g data-mml-node="msub" transform="translate(500, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-31"/></g></g><g data-mml-node="mo" transform="translate(1610.8, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(2611, 0)"><use href="#MJX-TEX-N-34"/></g><g data-mml-node="msub" transform="translate(3111, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(3999.6, 0)"><use href="#MJX-TEX-N-2C"/></g><g data-mml-node="msub" transform="translate(4444.2, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-32"/></g></g><g data-mml-node="mo" transform="translate(5332.8, 0)"><use href="#MJX-TEX-N-2C"/></g><g data-mml-node="msub" transform="translate(5777.4, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mn" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-N-33"/></g></g><g data-mml-node="mo" transform="translate(6666, 0)"><use href="#MJX-TEX-N-2C"/></g><g data-mml-node="mo" transform="translate(7110.7, 0)"><use href="#MJX-TEX-N-22EF"/></g><g data-mml-node="mo" transform="translate(8449.3, 0)"><use href="#MJX-TEX-N-2C"/></g><g data-mml-node="msub" transform="translate(8894, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-I-76"/></g><g data-mml-node="mi" transform="translate(485, -150) scale(0.707)"><use href="#MJX-TEX-I-6D"/></g></g></g></g></svg></mjx-container>是线性无关的.</p>
-<svg style="display: none" id="MJX-SVG-global-cache"><defs><path id="MJX-TEX-I-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"/><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/><path id="MJX-TEX-N-22EF" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250ZM525 250Q525 274 542 292T585 310Q609 310 627 294T646 251Q646 226 629 208T586 190T543 207T525 250ZM972 250Q972 274 989 292T1032 310Q1056 310 1074 294T1093 251Q1093 226 1076 208T1033 190T990 207T972 250Z"/><path id="MJX-TEX-I-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/><path id="MJX-TEX-N-2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z"/><path id="MJX-TEX-D-46" d="M584 499Q569 490 566 490Q558 490 552 497T546 515Q546 535 533 559Q526 574 506 593T469 621Q415 648 326 648Q293 648 287 647T275 641Q264 630 263 617Q262 609 260 492V370L275 372Q323 376 350 392T393 441Q409 473 409 506Q409 529 427 529Q437 529 442 519Q444 511 444 362Q444 212 442 206Q436 197 426 197Q409 197 409 217Q409 265 375 299Q346 328 280 335H260V206Q260 70 262 63Q265 46 276 41T326 35Q362 35 366 28Q377 17 366 3L360 -1H24Q12 5 12 16Q12 35 51 35Q92 38 97 52Q102 60 102 341T97 632Q91 645 51 648Q12 648 12 666Q12 675 24 683H573Q576 678 584 670V499ZM137 341Q137 131 136 89T130 37Q129 36 129 35H182Q233 35 233 39Q226 54 225 92T224 346L226 623L231 635L235 648H129Q132 641 133 638T135 603T137 517T137 341ZM549 603V648H495L506 641Q531 621 533 619L549 603ZM409 317V395L400 386Q390 376 375 366L357 355L373 346Q394 331 397 328L409 317Z"/><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/><path id="MJX-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/><path id="MJX-TEX-I-76" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"/><path id="MJX-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/><path id="MJX-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/><path id="MJX-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/><path id="MJX-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/><path id="MJX-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/></defs></svg></body></html>
+<p>第7题: 该命题正确. 因为如果存在 $a_1$, $\cdots$, $a_m$ $\in\mathbb F$ 使得 \[a_1(5v_1-4v_2)+a_2v_2+\cdots+a_mv_m=0,\]我们有 \[5a_1v_1+(a_2-4a_1)v_2+a_3v_3\cdots+a_mv_m=0.\] 因为 $v_1$, $v_2$, $\cdots$, $v_m$ 是线性无关的, 所以\[5a_1=0,a_2-4a_1=0,a_3=\cdots=a_m=0.\]从而得到 $a_1=a_2=\cdots=a_m=0$, 因此由定义 2.17 知向量组\[5v_1-4v_2, v_2, v_3,\cdots,v_m\]是线性无关的.</p>
+
     </div>
 
     
     
     
       
-  <div class="popular-posts-header">相关文章</div>
+  <div class="popular-posts-header">You may also like.</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/cn/LADR-1A1.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.1</a></div>
@@ -442,47 +307,12 @@ mjx-container + br {
       <div class="popular-posts-title"><a href="/cn/LADR-1A11.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.11</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A13.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.13</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/cn/LADR-1A12.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.12</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A16.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.16</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A14.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.14</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A15.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.15</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A2.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.2</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A4.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.4</a></div>
+      <div class="popular-posts-title"><a href="/cn/LADR-1A13.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.13</a></div>
     </li>
   </ul>
-
-        <div class="reward-container">
-  <div>如果您感觉我的解答质量不错，读后收获很大，不妨小额捐助我一下，让我有动力继续更新写出更多好答案。</div>
-  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
-        <img src="/cn/images/wechatpay.png" alt="Anavrin 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div style="display: inline-block;">
-        <img src="/cn/images/alipay.png" alt="Anavrin 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
-</div>
 
 
       <footer class="post-footer">
@@ -492,11 +322,6 @@ mjx-container + br {
           </div>
 
         
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  </div>
 
 
         
@@ -517,12 +342,33 @@ mjx-container + br {
   
   
 
-  </div>
 
 
           </div>
           
-    <div class="comments" id="comments"></div>
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -552,9 +398,9 @@ mjx-container + br {
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Anavrin"
-      src="/cn/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">Anavrin</p>
+    <img class="site-author-image" itemprop="image" alt="Math-Page"
+      src="/cn/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Math-Page</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -597,114 +443,64 @@ mjx-container + br {
       <div class="footer-inner">
         
 
+        
+
 <div class="copyright">
   
-  &copy; 2019 – 
+  &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Anavrin</span>
+  <span class="author" itemprop="copyrightHolder">Math-Page</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
+      <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">32k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">14 分钟</span>
+    <span title="站点阅读时长">29 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> 强力驱动 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Gemini</a> v7.5.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1278846334&web_id=1278846334"></script>
+  </div>
 
 
 
 
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
-  <script>
-    firebase.initializeApp({
-      apiKey: 'AIzaSyBEW9BVv1BrxjAOr_ZLhIrcS8U3z3UMny0',
-      projectId: 'smart-pride-813'
-    });
-
-    function getCount(doc, increaseCount) {
-      // IncreaseCount will be false when not in article page
-      return doc.get().then(d => {
-        var count = 0;
-        if (!d.exists) { // Has no data, initialize count
-          if (increaseCount) {
-            doc.set({
-              count: 1
-            });
-            count = 1;
-          }
-        } else { // Has data
-          count = d.data().count;
-          if (increaseCount) {
-            // If first view this article
-            doc.set({ // Increase count
-              count: count + 1
-            });
-            count++;
-          }
-        }
-
-        return count;
-      });
-    }
-
-    function appendCountTo(el) {
-      return count => {
-        el.innerText = count;
-      }
-    }
-  </script>
-  <script>
-    (function() {
-      var db = firebase.firestore();
-      var articles = db.collection('articles');
-
-      if (CONFIG.page.isPost) { // Is article page
-        var title = document.querySelector('.post-title').innerText.trim();
-        var doc = articles.doc(title);
-        var increaseCount = CONFIG.hostname === location.hostname;
-        if (localStorage.getItem(title)) {
-          increaseCount = false;
-        } else {
-          // Mark as visited
-          localStorage.setItem(title, true);
-        }
-        getCount(doc, increaseCount).then(appendCountTo(document.querySelector('.firestore-visitors-count')));
-      } else if (CONFIG.page.isHome) { // Is index page
-        var promises = [...document.querySelectorAll('.post-title')].map(element => {
-          var title = element.innerText.trim();
-          var doc = articles.doc(title);
-          return getCount(doc);
-        });
-        Promise.all(promises).then(counts => {
-          var metas = document.querySelectorAll('.firestore-visitors-count');
-          counts.forEach((val, idx) => {
-            appendCountTo(metas[idx])(val);
-          });
-        });
-      }
-    })();
-  </script>
 
 
-
-
-        
       </div>
     </footer>
   </div>
@@ -716,7 +512,7 @@ mjx-container + br {
 <script src="/cn/js/utils.js"></script>
 
 
-<script src="/cn/js/schemes/pisces.js"></script>
+<script src="/cn/js/schemes/muse.js"></script>
 
 
 <script src="/cn/js/next-boot.js"></script>
@@ -728,26 +524,6 @@ mjx-container + br {
 
 
 
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id: 16288,
-      el: 'wpac-rating',
-      color: 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
   
 <script src="/cn/js/local-search.js"></script>
@@ -764,36 +540,88 @@ mjx-container + br {
 
 
 
+  
 
   
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    },
+    messageStyle: "none"
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
 
   
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: 'YbKvc2wjkxbD071kKKl0Os2g-MdYXbMMI',
-    appKey: '0riqb81bPTvawuMBypIHg6ph',
-    placeholder: "Just go go",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: 'en' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'YbKvc2wjkxbD071kKKl0Os2g-MdYXbMMI',
+      appKey     : '0riqb81bPTvawuMBypIHg6ph',
+      placeholder: "LaTeX/Mathjax is supported in comment",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
 </script>
 
 </body>

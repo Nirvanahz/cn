@@ -3,73 +3,48 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="linear-gradient(to right, #ff5483, #ffae0c)">
+<meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/cn/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/cn/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/cn/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/cn/images/logo.svg" color="linear-gradient(to right, #ff5483, #ffae0c)">
+  <link rel="apple-touch-icon" sizes="180x180" href="/cn/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/cn/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/cn/images/favicon.png">
+  <link rel="mask-icon" href="/cn/images/favicon.png" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/cn/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Alegreya:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://todatasci.com/cn').hostname,
-    root: '/cn/',
-    scheme: 'Gemini',
-    version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"mac"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: true,
-    pangu: false,
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},
-    path: 'search.xml',
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    sidebarPadding: 40
-  };
-</script>
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"emath.page","root":"/cn/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-  <meta name="description" content="线性代数应该这样学第三版习题解答目录             第6题解答: 这不是一个  上的线性空间. 考虑 1.19 中的分配律. 如果它是  上的线性空间, 我们将会得到 因此对任意的 , 我们有我们得到了矛盾, 因为加法单位是唯一的.  另解: 注意到这说明它不满足加法结合律, 所以不是线性空间.">
+  <meta name="description" content="线性代数应该这样学第三版习题解答目录             第6题解答: 这不是一个 $\mathbb R$ 上的线性空间. 考虑 1.19 中的分配律. 如果它是 $\mathbb R$ 上的线性空间, 我们将会得到 \[\infty&#x3D;(2+(-1))\infty&#x3D;2\infty+(-1)\infty&#x3D;\infty+(-\infty)&#x3D;0.\]因此对任意的 $t\in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线性代数应该这样学第三版习题解答1.B.6">
-<meta property="og:url" content="https://todatasci.com/cn/LADR-1B6.html">
+<meta property="og:url" content="https://emath.page/cn/LADR-1B6.html">
 <meta property="og:site_name" content="悠若空">
-<meta property="og:description" content="线性代数应该这样学第三版习题解答目录             第6题解答: 这不是一个  上的线性空间. 考虑 1.19 中的分配律. 如果它是  上的线性空间, 我们将会得到 因此对任意的 , 我们有我们得到了矛盾, 因为加法单位是唯一的.  另解: 注意到这说明它不满足加法结合律, 所以不是线性空间.">
+<meta property="og:description" content="线性代数应该这样学第三版习题解答目录             第6题解答: 这不是一个 $\mathbb R$ 上的线性空间. 考虑 1.19 中的分配律. 如果它是 $\mathbb R$ 上的线性空间, 我们将会得到 \[\infty&#x3D;(2+(-1))\infty&#x3D;2\infty+(-1)\infty&#x3D;\infty+(-\infty)&#x3D;0.\]因此对任意的 $t\in">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-19T22:31:47.261Z">
 <meta property="article:modified_time" content="2020-03-19T22:31:48.324Z">
-<meta property="article:author" content="Anavrin">
+<meta property="article:author" content="Math-Page">
 <meta property="article:tag" content="Solution">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://todatasci.com/cn/LADR-1B6.html">
+<link rel="canonical" href="https://emath.page/cn/LADR-1B6.html">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
   };
 </script>
 
@@ -113,124 +88,7 @@
   </style>
 </noscript>
 
-<style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"] > svg a {
-  fill: blue;
-  stroke: blue;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container {
-  overflow: auto hidden;
-}
-
-mjx-container + br {
-  display: none;
-}
-</style></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
@@ -238,17 +96,6 @@ mjx-container + br {
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/cn/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">悠若空</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-  </div>
-
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
@@ -256,30 +103,46 @@ mjx-container + br {
       <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
+
+  <div class="site-meta">
+
+    <a href="/cn/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">悠若空</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
 </div>
 
 
+
+
 <nav class="site-nav">
-  
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/cn/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/cn/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/cn/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">3</span></a>
+    <a href="/cn/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/cn/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">2</span></a>
+    <a href="/cn/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/cn/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">66</span></a>
+    <a href="/cn/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>归档<span class="badge">66</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -287,29 +150,34 @@ mjx-container + br {
         </a>
       </li>
   </ul>
-
 </nav>
-  <div class="site-search">
+
+
+
+  <div class="search-pop-overlay">
     <div class="popup search-popup">
-    <div class="search-header">
+        <div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+    <input autocomplete="off" autocapitalize="off"
            placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result"></div>
-
-</div>
-<div class="search-pop-overlay"></div>
-
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
   </div>
+</div>
+
+    </div>
+  </div>
+
 </div>
     </header>
 
@@ -326,19 +194,18 @@ mjx-container + br {
         <div class="content-wrap">
           
 
-          <div class="content">
+          <div class="content post posts-expand">
             
 
-  <div class="posts-expand">
-      
+    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://todatasci.com/cn/cn/LADR-1B6.html">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://emath.page/cn/LADR-1B6.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/cn/images/avatar.gif">
-      <meta itemprop="name" content="Anavrin">
+      <meta itemprop="image" content="/cn/images/avatar.png">
+      <meta itemprop="name" content="Math-Page">
       <meta itemprop="description" content="">
     </span>
 
@@ -346,14 +213,14 @@ mjx-container + br {
       <meta itemprop="name" content="悠若空">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           线性代数应该这样学第三版习题解答1.B.6
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
               
@@ -362,33 +229,31 @@ mjx-container + br {
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/cn/categories/Linear-Algebra-Done-Right/" itemprop="url" rel="index">
-                    <span itemprop="name">Linear Algebra Done Right</span>
-                  </a>
+                  <a href="/cn/categories/Linear-Algebra-Done-Right/" itemprop="url" rel="index"><span itemprop="name">Linear Algebra Done Right</span></a>
                 </span>
             </span>
 
           
-            <span class="post-meta-item" title="阅读次数">
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">阅读次数：</span>
-              <span class="firestore-visitors-count"></span>
+              <span id="busuanzi_value_page_pv"></span>
             </span>
   
   <span class="post-meta-item">
     
       <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
+        <i class="far fa-comment"></i>
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/cn/LADR-1B6.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/cn/LADR-1B6.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/cn/LADR-1B6.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -396,14 +261,14 @@ mjx-container + br {
   <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
+                <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>122</span>
+              <span>343</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
+                <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
@@ -418,21 +283,21 @@ mjx-container + br {
     <div class="post-body" itemprop="articleBody">
 
       
-        <html><head></head><body><div class="note primary">
+        <div class="note primary">
             <p><a href="/cn/LADR-content.html">线性代数应该这样学第三版习题解答目录</a></p>
           </div>
 
-<p>第6题解答: 这不是一个 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="1.633ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 722 683" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use href="#MJX-TEX-D-52"/></g></g></g></g></svg></mjx-container> 上的线性空间. 考虑 1.19 中的分配律. 如果它是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="1.633ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 722 683" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use href="#MJX-TEX-D-52"/></g></g></g></g></svg></mjx-container> 上的线性空间, 我们将会得到 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="52.547ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 23225.6 1000" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(1277.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mo" transform="translate(2333.6, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mn" transform="translate(2722.6, 0)"><use href="#MJX-TEX-N-32"/></g><g data-mml-node="mo" transform="translate(3444.8, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(4445, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mo" transform="translate(4834, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(5612, 0)"><use href="#MJX-TEX-N-31"/></g><g data-mml-node="mo" transform="translate(6112, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(6501, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mi" transform="translate(6890, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(8167.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(9223.6, 0)"><use href="#MJX-TEX-N-32"/></g><g data-mml-node="mi" transform="translate(9723.6, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(10945.8, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(11946, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mo" transform="translate(12335, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mn" transform="translate(13113, 0)"><use href="#MJX-TEX-N-31"/></g><g data-mml-node="mo" transform="translate(13613, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mi" transform="translate(14002, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(15279.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mi" transform="translate(16335.6, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(17557.8, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(18558, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mo" transform="translate(18947, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mi" transform="translate(19725, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(20725, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(21391.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(22447.6, 0)"><use href="#MJX-TEX-N-30"/><use href="#MJX-TEX-N-2E" transform="translate(500, 0)"/></g></g></g></svg></mjx-container>因此对任意的 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex" xmlns="http://www.w3.org/2000/svg" width="5.216ex" height="1.636ex" role="img" focusable="false" viewBox="0 -683 2305.6 723" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use href="#MJX-TEX-I-74"/></g><g data-mml-node="mo" transform="translate(638.8, 0)"><use href="#MJX-TEX-N-2208"/></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1583.6, 0)"><g data-mml-node="mi"><use href="#MJX-TEX-D-52"/></g></g></g></g></svg></mjx-container>, 我们有<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.186ex" xmlns="http://www.w3.org/2000/svg" width="27.466ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 12140.1 748" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use href="#MJX-TEX-I-74"/></g><g data-mml-node="mo" transform="translate(638.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(1694.6, 0)"><use href="#MJX-TEX-N-30"/></g><g data-mml-node="mo" transform="translate(2416.8, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mi" transform="translate(3417, 0)"><use href="#MJX-TEX-I-74"/></g><g data-mml-node="mo" transform="translate(4055.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mi" transform="translate(5111.6, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(6333.8, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mi" transform="translate(7334, 0)"><use href="#MJX-TEX-I-74"/></g><g data-mml-node="mo" transform="translate(7972.8, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mi" transform="translate(9028.6, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(10306.3, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(11362.1, 0)"><use href="#MJX-TEX-N-30"/><use href="#MJX-TEX-N-2E" transform="translate(500, 0)"/></g></g></g></svg></mjx-container>我们得到了矛盾, 因为加法单位是唯一的.</p>
+<p>第6题解答: 这不是一个 $\mathbb R$ 上的线性空间. 考虑 1.19 中的分配律. 如果它是 $\mathbb R$ 上的线性空间, 我们将会得到 \[\infty=(2+(-1))\infty=2\infty+(-1)\infty=\infty+(-\infty)=0.\]因此对任意的 $t\in\mathbb R$, 我们有\[t=0+t=\infty+t=\infty=0.\]我们得到了矛盾, 因为加法单位是唯一的.</p>
 <hr>
-<p>另解: 注意到<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="36.205ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 16002.4 1000" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mi" transform="translate(389, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(1611.2, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mi" transform="translate(2611.4, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(3611.4, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(4222.7, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(5222.9, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mo" transform="translate(5611.9, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mi" transform="translate(6389.9, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(7389.9, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(8056.7, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mi" transform="translate(9112.4, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(10334.7, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(11334.9, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mo" transform="translate(11723.9, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mi" transform="translate(12501.9, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(13501.9, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(14168.7, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mn" transform="translate(15224.4, 0)"><use href="#MJX-TEX-N-30"/></g><g data-mml-node="mo" transform="translate(15724.4, 0)"><use href="#MJX-TEX-N-2C"/></g></g></g></svg></mjx-container><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="32.684ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 14446.4 1000" xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(1222.2, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(2222.4, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mi" transform="translate(2611.4, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(3833.7, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mo" transform="translate(4833.9, 0)"><use href="#MJX-TEX-N-28"/></g><g data-mml-node="mo" transform="translate(5222.9, 0)"><use href="#MJX-TEX-N-2212"/></g><g data-mml-node="mi" transform="translate(6000.9, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(7000.9, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(7389.9, 0)"><use href="#MJX-TEX-N-29"/></g><g data-mml-node="mo" transform="translate(8056.7, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mi" transform="translate(9112.4, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(10334.7, 0)"><use href="#MJX-TEX-N-2B"/></g><g data-mml-node="mn" transform="translate(11334.9, 0)"><use href="#MJX-TEX-N-30"/></g><g data-mml-node="mo" transform="translate(12112.7, 0)"><use href="#MJX-TEX-N-3D"/></g><g data-mml-node="mi" transform="translate(13168.4, 0)"><use href="#MJX-TEX-N-221E"/></g><g data-mml-node="mo" transform="translate(14168.4, 0)"><use href="#MJX-TEX-N-2E"/></g></g></g></svg></mjx-container>这说明它不满足加法结合律, 所以不是线性空间.</p>
-<svg style="display: none" id="MJX-SVG-global-cache"><defs><path id="MJX-TEX-D-52" d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"/><path id="MJX-TEX-N-221E" d="M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z"/><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/><path id="MJX-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/><path id="MJX-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/><path id="MJX-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/><path id="MJX-TEX-I-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"/><path id="MJX-TEX-N-2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z"/><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></defs></svg></body></html>
+<p>另解: 注意到\[(\infty + \infty) + (-\infty) = \infty + (-\infty) = 0,\]\[\infty + (\infty + (-\infty)) = \infty + 0 = \infty.\]这说明它不满足加法结合律, 所以不是线性空间.</p>
+
     </div>
 
     
     
     
       
-  <div class="popular-posts-header">相关文章</div>
+  <div class="popular-posts-header">You may also like.</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/cn/LADR-1A1.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.1</a></div>
@@ -444,47 +309,12 @@ mjx-container + br {
       <div class="popular-posts-title"><a href="/cn/LADR-1A11.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.11</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A13.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.13</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/cn/LADR-1A12.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.12</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A16.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.16</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A14.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.14</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A15.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.15</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A2.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.2</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/cn/LADR-1A4.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.4</a></div>
+      <div class="popular-posts-title"><a href="/cn/LADR-1A13.html" rel="bookmark">线性代数应该这样学第三版习题解答1.A.13</a></div>
     </li>
   </ul>
-
-        <div class="reward-container">
-  <div>如果您感觉我的解答质量不错，读后收获很大，不妨小额捐助我一下，让我有动力继续更新写出更多好答案。</div>
-  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
-        <img src="/cn/images/wechatpay.png" alt="Anavrin 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div style="display: inline-block;">
-        <img src="/cn/images/alipay.png" alt="Anavrin 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
-</div>
 
 
       <footer class="post-footer">
@@ -494,11 +324,6 @@ mjx-container + br {
           </div>
 
         
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  </div>
 
 
         
@@ -519,12 +344,33 @@ mjx-container + br {
   
   
 
-  </div>
 
 
           </div>
           
-    <div class="comments" id="comments"></div>
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -554,9 +400,9 @@ mjx-container + br {
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Anavrin"
-      src="/cn/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">Anavrin</p>
+    <img class="site-author-image" itemprop="image" alt="Math-Page"
+      src="/cn/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Math-Page</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -599,114 +445,64 @@ mjx-container + br {
       <div class="footer-inner">
         
 
+        
+
 <div class="copyright">
   
-  &copy; 2019 – 
+  &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Anavrin</span>
+  <span class="author" itemprop="copyrightHolder">Math-Page</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
+      <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">32k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">14 分钟</span>
+    <span title="站点阅读时长">29 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> 强力驱动 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Gemini</a> v7.5.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1278846334&web_id=1278846334"></script>
+  </div>
 
 
 
 
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
-  <script>
-    firebase.initializeApp({
-      apiKey: 'AIzaSyBEW9BVv1BrxjAOr_ZLhIrcS8U3z3UMny0',
-      projectId: 'smart-pride-813'
-    });
-
-    function getCount(doc, increaseCount) {
-      // IncreaseCount will be false when not in article page
-      return doc.get().then(d => {
-        var count = 0;
-        if (!d.exists) { // Has no data, initialize count
-          if (increaseCount) {
-            doc.set({
-              count: 1
-            });
-            count = 1;
-          }
-        } else { // Has data
-          count = d.data().count;
-          if (increaseCount) {
-            // If first view this article
-            doc.set({ // Increase count
-              count: count + 1
-            });
-            count++;
-          }
-        }
-
-        return count;
-      });
-    }
-
-    function appendCountTo(el) {
-      return count => {
-        el.innerText = count;
-      }
-    }
-  </script>
-  <script>
-    (function() {
-      var db = firebase.firestore();
-      var articles = db.collection('articles');
-
-      if (CONFIG.page.isPost) { // Is article page
-        var title = document.querySelector('.post-title').innerText.trim();
-        var doc = articles.doc(title);
-        var increaseCount = CONFIG.hostname === location.hostname;
-        if (localStorage.getItem(title)) {
-          increaseCount = false;
-        } else {
-          // Mark as visited
-          localStorage.setItem(title, true);
-        }
-        getCount(doc, increaseCount).then(appendCountTo(document.querySelector('.firestore-visitors-count')));
-      } else if (CONFIG.page.isHome) { // Is index page
-        var promises = [...document.querySelectorAll('.post-title')].map(element => {
-          var title = element.innerText.trim();
-          var doc = articles.doc(title);
-          return getCount(doc);
-        });
-        Promise.all(promises).then(counts => {
-          var metas = document.querySelectorAll('.firestore-visitors-count');
-          counts.forEach((val, idx) => {
-            appendCountTo(metas[idx])(val);
-          });
-        });
-      }
-    })();
-  </script>
 
 
-
-
-        
       </div>
     </footer>
   </div>
@@ -718,7 +514,7 @@ mjx-container + br {
 <script src="/cn/js/utils.js"></script>
 
 
-<script src="/cn/js/schemes/pisces.js"></script>
+<script src="/cn/js/schemes/muse.js"></script>
 
 
 <script src="/cn/js/next-boot.js"></script>
@@ -730,26 +526,6 @@ mjx-container + br {
 
 
 
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id: 16288,
-      el: 'wpac-rating',
-      color: 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
   
 <script src="/cn/js/local-search.js"></script>
@@ -766,36 +542,88 @@ mjx-container + br {
 
 
 
+  
 
   
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    },
+    messageStyle: "none"
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
 
   
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: 'YbKvc2wjkxbD071kKKl0Os2g-MdYXbMMI',
-    appKey: '0riqb81bPTvawuMBypIHg6ph',
-    placeholder: "Just go go",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: 'en' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'YbKvc2wjkxbD071kKKl0Os2g-MdYXbMMI',
+      appKey     : '0riqb81bPTvawuMBypIHg6ph',
+      placeholder: "LaTeX/Mathjax is supported in comment",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
 </script>
 
 </body>
