@@ -2,12 +2,12 @@
   --body-bg-color: #fff;
   --content-bg-color: #f5f5f5;
   --card-bg-color: #f5f5f5;
-  --text-color: #222;
+  --text-color: #000;
   --blockquote-color: #666;
   --link-color: #555;
-  --link-hover-color: #222;
-  --brand-color: #222;
-  --brand-hover-color: #222;
+  --link-hover-color: #000;
+  --brand-color: #000;
+  --brand-hover-color: #000;
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #ddd;
@@ -626,7 +626,7 @@ pre .javascript .function {
   margin-bottom: 10px;
 }
 .post-body .label {
-  color: #222;
+  color: #000;
   display: inline;
   padding: 0 2px;
 }
@@ -891,7 +891,7 @@ pre .javascript .function {
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #222;
+  border-top-color: #000;
 }
 .pagination .space {
   margin: 0;
@@ -923,7 +923,7 @@ pre .javascript .function {
   .pagination .prev:hover,
   .pagination .next:hover,
   .pagination .page-number:hover {
-    border-bottom-color: #222;
+    border-bottom-color: #000;
   }
 }
 .comments {
@@ -1007,7 +1007,7 @@ pre .javascript .function {
   padding: 0 10px;
 }
 .headband {
-  background: #222;
+  background: #000;
   height: 3px;
 }
 .site-meta {
@@ -1151,7 +1151,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .sidebar {
-  background: #222;
+  background: #000;
   bottom: 0;
   box-shadow: inset 0 2px 6px #000;
   position: fixed;
@@ -1216,7 +1216,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c7ffff;
+  background: #f2c440;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1321,7 +1321,7 @@ pre .javascript .function {
   display: block;
 }
 .sidebar-toggle {
-  background: #222;
+  background: #000;
   bottom: 45px;
   cursor: pointer;
   height: 14px;
@@ -1762,7 +1762,7 @@ pre .javascript .function {
   border-bottom-color: #666;
 }
 .posts-collapse .post-header:hover::before {
-  background: #222;
+  background: #000;
 }
 .posts-collapse .post-meta {
   display: inline;
@@ -2115,11 +2115,11 @@ pre .javascript .function {
   padding: 0;
 }
 .event-list hr {
-  background: #222;
+  background: #000;
   margin: 20px 0 45px 0;
 }
 .event-list hr::after {
-  background: #222;
+  background: #000;
   color: #fff;
   content: 'NOW';
   display: inline-block;
@@ -2128,7 +2128,7 @@ pre .javascript .function {
   text-align: right;
 }
 .event-list .event {
-  background: #222;
+  background: #000;
   margin: 20px 0;
   min-height: 40px;
   padding: 15px 0 15px 10px;
@@ -2313,7 +2313,7 @@ ul.breadcrumb li + li:last-child {
   cursor: pointer;
 }
 .search-popup .popup-btn-close:hover .fa {
-  color: #222;
+  color: #000;
 }
 .search-popup .search-header {
   background: #eee;
